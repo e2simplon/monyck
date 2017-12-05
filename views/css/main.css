@@ -1,0 +1,42 @@
+html,body {
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:darkred;
+}
+
+.loginblock {
+    width: 250px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 0 500px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.loginblock div {
+    padding: 25px 0;
+    line-height: 50px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: lightgrey;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+}
