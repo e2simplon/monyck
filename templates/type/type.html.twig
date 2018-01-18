@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block titlePage %}Type{% endblock %}
+{% block main %}
+    <h4>
+        <a href="/type/add">+ Add type</a>
+    </h4>
+    {%  for type in types %}
+        <h2>#{{ type.id }} {{ type.type }}<a href="/type/edit/{{ type.id }}"> ✎</a><a href="/type/delete/{{ type.id }}"> ×</a></h2><br>
+    {% endfor %}
+{% endblock %}

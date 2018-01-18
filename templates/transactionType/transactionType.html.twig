@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block titlePage %}Transaction type{% endblock %}
+{% block main %}
+    <h4>
+        <a href="/transactionType/add">+ Add Transaction type</a>
+    </h4>
+    {%  for type in types %}
+        <h2>#{{ type.id }} {{ type.type }}<a href="/transactionType/edit/{{ type.id }}"> ✎</a><a href="/transactionType/delete/{{ type.id }}"> ×</a></h2><br>
+    {% endfor %}
+{% endblock %}

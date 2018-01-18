@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+{% block titlePage %}{{ projet }}{% endblock %}
+{% block main %}
+    <h3>Create new Transaction Type</h3>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}

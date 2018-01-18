@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            <meta charset="UTF-8">
+            <title>{% block title %}Monycks Bank{% endblock %}</title>
+            {% block stylesheets %}{% endblock %}
+        {% endblock %}
+    </head>
+    <body>
+        <h1>{% block titlePage %}Welcome on Monyck !{% endblock %}</h1>
+        <nav>
+            {% block nav %}
+                <h3>≡
+                    <a href="/">Home</a> ≡
+                    <a href="/ticket">Tickets</a> ≡
+                    <a href="/offer">Offers</a> ≡
+                    <a href="/user">Users</a> ≡
+                    <a href="/transaction">Transactions</a> ≡
+                </h3>
+            {% endblock %}
+        </nav>
+        <main>
+            {% block main %}
+
+            {% endblock %}
+        </main>
+        <footer>
+            {% block footer %}{% endblock %}
+        </footer>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
